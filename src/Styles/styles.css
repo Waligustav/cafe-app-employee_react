@@ -137,6 +137,11 @@ h1 {
   margin: 0.5rem;
 }
 
+.menu-item-box-dessert:active {
+  background-color: lightgreen;
+  height: 10rem;
+}
+
 .menu-item-title {
   font-size: 1.2rem;
   font-weight: bold;
