@@ -14,8 +14,9 @@ const warmBeverages = [
         price: 36,
         storlek: 'stor',
       },
+      
     ],
-    img: '',
+    img: 'black-coffee.jpg',
   },
   {
     id: 'Cappuccino',

@@ -47,7 +47,7 @@ const Beverage = (props) => {
 
   return (
     <div className='menu-item-box-beverage'>
-      <div className='menu-item-title'>{props.type.id}</div>
+      <div className={'menu-item-title'}>{props.type.id}</div>
       {props.type.size.map((item) => {
         return (
           <div>

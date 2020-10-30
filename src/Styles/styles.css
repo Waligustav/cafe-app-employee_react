@@ -138,7 +138,7 @@ h1 {
 }
 
 .menu-item-box-dessert:active {
-  background-color: lightgreen;
+  background-color: rgb(89, 118, 89);
   height: 10rem;
 }
 
