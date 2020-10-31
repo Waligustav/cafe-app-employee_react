@@ -134,6 +134,10 @@ h1 {
   border-radius: 5px;
   margin: 0.5rem;
 }
+.menu-item-box-beverage:active {
+
+  background-color: rgb(20, 153, 140);
+}
 
 .menu-item-box-dessert {
   background-color: rgb(216, 208, 198);
@@ -142,11 +146,6 @@ h1 {
   border: 1px solid black;
   border-radius: 5px;
   margin: 0.5rem;
-}
-
-.menu-item-box-dessert:active {
-  background-color: rgb(89, 118, 89);
-  height: 10rem;
 }
 
 .menu-item-title {

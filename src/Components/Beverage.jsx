@@ -47,8 +47,14 @@ const Beverage = (props) => {
     }
   };
 
+  function expandDiv(){
+    alert("This works!")
+  }
+
   return (
-    <div className='menu-item-box-beverage'>
+    <div className='menu-item-box-beverage'
+    onClick={() => expandDiv()}>
+
       <div className={'menu-item-title'}>{props.type.id}</div>
       {props.type.size.map((item) => {
         return (
