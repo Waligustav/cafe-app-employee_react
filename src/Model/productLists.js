@@ -8,7 +8,7 @@ const warmBeverages = [
       },
       {
         price: 32,
-        storlek: 'mellan',
+        storlek: 'medium',
       },
       {
         price: 36,
@@ -27,7 +27,7 @@ const warmBeverages = [
       },
       {
         price: 42,
-        storlek: 'mellan',
+        storlek: 'medium',
       },
       {
         price: 46,
@@ -45,7 +45,7 @@ const warmBeverages = [
       },
       {
         price: 36,
-        storlek: 'mellan',
+        storlek: 'medium',
       },
       {
         price: 40,
@@ -63,7 +63,7 @@ const warmBeverages = [
       },
       {
         price: 42,
-        storlek: 'mellan',
+        storlek: 'medium',
       },
       {
         price: 46,
@@ -81,7 +81,7 @@ const warmBeverages = [
       },
       {
         price: 44,
-        storlek: 'mellan',
+        storlek: 'medium',
       },
       {
         price: 48,
@@ -99,7 +99,7 @@ const warmBeverages = [
       },
       {
         price: 48,
-        storlek: 'mellan',
+        storlek: 'medium',
       },
       {
         price: 51,
@@ -117,7 +117,7 @@ const warmBeverages = [
       },
       {
         price: 38,
-        storlek: 'mellan',
+        storlek: 'medium',
       },
       {
         price: 42,
@@ -135,7 +135,7 @@ const warmBeverages = [
       },
       {
         price: 40,
-        storlek: 'mellan',
+        storlek: 'medium',
       },
       {
         price: 44,
@@ -158,7 +158,7 @@ const coldBeverages = [
       {
         name: 'Iskaffe (medium)',
         price: 42,
-        storlek: 'mellan',
+        storlek: 'medium',
       },
       {
         name: 'Iskaffe (stor)',
@@ -179,7 +179,7 @@ const coldBeverages = [
       {
         name: 'Iste (medium)',
         price: 47,
-        storlek: 'mellan',
+        storlek: 'medium',
       },
       {
         name: 'Iste (stor)',
@@ -198,6 +198,7 @@ const desserts = [
       {
         name: 'Brownies',
         price: 44,
+        storlek: 'vanlig'
       }
     ],
     img: '',
@@ -208,6 +209,7 @@ const desserts = [
       {
         name: 'Oreokake',
         price: 54,
+        storlek: 'vanlig'
       }
     ],
     img: '',
@@ -218,6 +220,7 @@ const desserts = [
       {
         name: 'Kanelbolle',
         price: 46,
+        storlek: 'vanlig'
       }
     ],
     img: '',
@@ -228,6 +231,7 @@ const desserts = [
       {
         name: 'Croissant',
         price: 38,
+        storlek: 'vanlig'
       }
     ],
     img: '',
@@ -238,6 +242,7 @@ const desserts = [
       {
         name: 'Chiapudding',
         price: 42,
+        storlek: 'vanlig'
       }
     ],
     img: '',
@@ -248,6 +253,7 @@ const desserts = [
       {
         name: 'Brioche',
         price: 44,
+        storlek: 'vanlig'
       }
     ],
     img: '',
@@ -258,6 +264,7 @@ const desserts = [
       {
         name: 'Scones',
         price: 37,
+        storlek: 'vanlig'
       }
     ],
     img: '',

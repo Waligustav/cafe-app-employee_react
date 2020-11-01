@@ -2,6 +2,7 @@ import React, { useState, useContext } from 'react';
 
 import { HandleKurv } from '../Model/handleKurv';
 import '../Styles/styles.css';
+import Expander from './Expander';
 
 const Beverage = (props) => {
   const handleKurv = useContext(HandleKurv);
@@ -14,17 +15,18 @@ const Beverage = (props) => {
   };
 
   const addToBasket = (item) => {
+    console.log("item:", item);
     const nrOrderedOf = getNrOrderOf(item);
     handleKurv.setProducts((prevstate) => {
       return {
-        ...prevstate,
-        [props.type.id]: {
-          ...prevstate[props.type.id],
-          [item.storlek]: {
-            antal: nrOrderedOf + 1,
-            price: item.price,
+         ...prevstate,
+          [props.type.id]: {
+            ...prevstate[props.type.id],
+            [item.storlek]: {
+              antal: nrOrderedOf + 1,
+              price: item.price
+            },
           },
-        },
       };
     });
   };
@@ -83,6 +85,37 @@ const Beverage = (props) => {
         );
       })}
     </div>
+
+  <Expander title={props.type.id}>
+    <div className='expander-text'>{
+          props.type.size.map((item) => {
+            return (
+              <div className="size-buttons-container">
+                <span 
+                  onClick={() => {
+                    removeFromBasket(item);
+                  }}
+                  className={'button minus-button'}
+                >
+                  -
+                </span>
+                <span className="number-of-items">{getNrOrderOf(item)}</span>
+                <span 
+                  onClick={() => {
+                    addToBasket(item);
+                  }}
+                  className={'button plus-button'}
+                >
+                  +
+                </span>
+                <span>
+                  {` ${item.storlek}: `}<strong>{item.price}</strong>{`,-`}
+                </span>
+              </div>
+            );
+          })
+    }</div>
+  </Expander>
   );
 };
 
