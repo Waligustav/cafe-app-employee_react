@@ -110,6 +110,20 @@ h1 {
   padding: 1rem;
 }
 
+/* Front page cards */
+
+.cardMenu {
+  background-color: rgb(216, 208, 198);
+  margin: 0;
+  padding: 0 0.5rem;
+  height: 5rem;
+  order: 1;
+}
+
+#dessertImg {
+ size: 10px;
+}
+
 /* Top buttons */
 
 .menu-section-button {

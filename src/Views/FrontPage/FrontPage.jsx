@@ -38,11 +38,15 @@ const MainMenu = () => {
       <div id="Front-page-menu-choice-container">
         <MenuSelection/>
       </div>
-      <img id='warmBeverageImg' src='../' />
-      <img id='coldBeverageImg' src='../' />
-      <Link to='/ShoppingCart/'>
-        <img id='<dessertImg' src='/assets/warm-beverage-images/americano-img.png' />
+      <div id="cardMenu">
+      <Link to='/MainMenu/:area?'><img class='warmBeverageImg' src='/assets/warm-beverage-images/cortado-img.png' alt="Bilde av kaffe" />
       </Link>
+      <Link to='/MainMenu/:area?'><img class='coldBeverageImg' src='/assets/cold-drinks-images/ice-tea-img.png' alt="Bilde av iste" />
+      </Link>
+      <Link to='/ShoppingCart/'>
+        <img class='dessertImg' src='/assets/desserts-images/cinnamon-roll-img.png' alt="Bilde av kanelsnurr" />
+      </Link>
+      </div>
       {getArea()}
       <PricePreView totalPrice={totalPrice} />
     </>
