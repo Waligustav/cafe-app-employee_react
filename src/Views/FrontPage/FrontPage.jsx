@@ -1,6 +1,7 @@
 import React, { useEffect, useContext, useState } from 'react';
 
 import { useParams } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import '../../Styles/styles.css';
 import { VarmDrikke } from '../Menu/Components/VarmDrikke';
 import { KallDrikke } from '../Menu/Components/KallDrikke';
@@ -37,6 +38,11 @@ const MainMenu = () => {
       <div id="Front-page-menu-choice-container">
         <MenuSelection/>
       </div>
+      <img id='warmBeverageImg' src='../' />
+      <img id='coldBeverageImg' src='../' />
+      <Link to='/ShoppingCart/'>
+        <img id='<dessertImg' src='/assets/warm-beverage-images/americano-img.png' />
+      </Link>
       {getArea()}
       <PricePreView totalPrice={totalPrice} />
     </>

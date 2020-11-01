@@ -49,43 +49,7 @@ const Beverage = (props) => {
     }
   };
 
-  function expandDiv(){
-    alert("This works!")
-  }
-
   return (
-    <div className='menu-item-box-beverage'
-    onClick={() => expandDiv()}>
-
-      <div className={'menu-item-title'}>{props.type.id}</div>
-      {props.type.size.map((item) => {
-        return (
-          <div className="size-buttons-container">
-            <span 
-              onClick={() => {
-                removeFromBasket(item);
-              }}
-              className={'button minus-button'}
-            >
-              -
-            </span>
-            <span>{getNrOrderOf(item)}</span>
-            <span 
-              onClick={() => {
-                addToBasket(item);
-              }}
-              className={'button plus-button'}
-            >
-              +
-            </span>
-            <span>
-              {item.storlek}: {item.price} kr,-
-            </span>
-          </div>
-        );
-      })}
-    </div>
-
   <Expander title={props.type.id}>
     <div className='expander-text'>{
           props.type.size.map((item) => {
@@ -120,6 +84,7 @@ const Beverage = (props) => {
 };
 
 export default Beverage;
+
 
 /*
 <button className={`size-button ${menuSection === menuSectionNames[0] ? "active-button" : ""}`}>Liten</button>

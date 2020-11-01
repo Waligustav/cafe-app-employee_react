@@ -57,6 +57,8 @@ h1 {
   display: grid;
 }
 
+
+
 .frontpage-div {
   border: 1px solid black;
   margin: 1rem;
@@ -151,7 +153,6 @@ h1 {
 @keyframes slideOut {
   from { bottom: 0; }
   to   { bottom: -6rem;  }
-=======
 }
 
 #total-price-text-div {

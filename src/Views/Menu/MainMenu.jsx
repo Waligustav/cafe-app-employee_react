@@ -7,6 +7,7 @@ import { Desserts } from './Components/Dessert';
 import { MenuSelection } from './Components/MenuSelection';
 import { PricePreView } from '../../Components/PricePreView';
 import { HandleKurv } from '../../Model/handleKurv';
+import { render } from '@testing-library/react';
 
 const MainMenu = () => {
   const menuSectionNames = ['Varm drikke', 'Kald drikke', 'Dessert'];
@@ -32,6 +33,7 @@ const MainMenu = () => {
   };
 
   return (
+    
     <>
 
       <div className="menu-background">
