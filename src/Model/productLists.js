@@ -17,7 +17,7 @@ const warmBeverages = [
         storlek: 'stor',
       },
     ],
-    
+
   },
   {
     id: 'Cappuccino',
