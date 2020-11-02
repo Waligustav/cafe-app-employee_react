@@ -51,9 +51,15 @@ const MainMenu = () => {
 
       <div class="cardMenu">
 
-        <h3 class="menuText warmDrinks">Varm drikke</h3>
-        <h3 class="menuText coldDrinks">Kald drikke</h3>
-        <h3 class="menuText desserts">Dessert</h3>
+        <p style={{
+        fontSize:`${fontSize}px`
+      }}class="menuText warmDrinks">Varm drikke</p>
+        <p style={{
+        fontSize:`${fontSize}px`
+      }}class="menuText coldDrinks">Kald drikke</p>
+        <p style={{
+        fontSize:`${fontSize}px`
+      }}class="menuText desserts">Dessert</p>
 
       <Link to='/MainMenu/:area?'><img id='menuImg' src='/assets/warm-beverage-images/cortado-img.png' alt="Bilde av kaffe" />
       </Link>
