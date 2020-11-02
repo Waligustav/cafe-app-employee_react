@@ -40,7 +40,7 @@ export const Shoppingcart = (props) => {
               }
               return 0;
             };
-            /* Increase amount in basket */
+            /* Increase amount in basket. */
             const addToBasket = (item) => {
               const nrOrderedOf = getNrOrderOf(item);
               handleKurv.setProducts((prevstate) => {
