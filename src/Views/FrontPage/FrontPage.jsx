@@ -54,6 +54,15 @@ const MainMenu = () => {
       </div>
       {getArea()}
       <PricePreView totalPrice={totalPrice} />
+
+
+      <div className="font-changer">
+        
+        <button onClick = {() => setFontsize(fontsize + 5)}>+ increase</button>
+        <button onClick = {() => setFontsize(fontsize - 5)}>- decrease</button>
+        <p></p>
+      </div>
+      
     </>
   );
 };
