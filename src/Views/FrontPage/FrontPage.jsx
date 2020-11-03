@@ -30,17 +30,18 @@ const MainMenu = () => {
   return (
     <>
       <header id='header-container'>
-
         <div>
           {show ? <div className="back-drop" onClick={closeModalHandler}></div> : null}
         </div>
+
+        <Link to='/FrontPage/FrontPage' h1 id='header-title' className='font-cursive'>
+          Kafé Judas
+        </Link>
         
           <Modal show={show} close={closeModalHandler}/>      
         <img id='hamburger-icon' src='../assets/hamburger-icon.png' onClick={() => setShow(true)}/>
+
       </header>
-      <Link to='/FrontPage/FrontPage' h1 id='header-title' className='font-cursive'>
-          Kafé Judas
-        </Link>
       
       <div id="Front-page-menu-choice-container">
       </div>

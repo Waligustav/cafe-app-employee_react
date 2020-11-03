@@ -3,22 +3,23 @@
     width: 80%;
     max-width: 800px;
     margin: 4rem auto;
-    transition: all .5s ease;
+    transition: all .4s ease;
     z-index: 3;
 
 }
 
 .modal-body .modal-menu-text {
-    font-size: 2.5rem;
-    background: rgb(254, 254, 254);
+    font-size: 30px;
     padding: 0rem;
-    margin: 1rem 0 2rem 0;
+    margin: 0rem 0 2rem 0;
+    font-family: 'Pacifico', cursive;
+    
 }
 
 .modal-content {
     text-align: center;
     padding: 1.5rem 1rem;
-    background: #fff;
+    box-shadow: 0 0 20px rgb(55, 35, 24);
 }
 
 .modal-body {
