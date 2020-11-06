@@ -3,7 +3,7 @@ import React from 'react';
 const warmBeverages = [
   {
     id: 'Filterkaffe',
-    icon: '../assets/icons/coffee-icon-test.png',
+    icon: '../assets/icons/coffee-icon-test4.png',
     size: [
       {
         price: 28,
@@ -22,7 +22,7 @@ const warmBeverages = [
   },
   {
     id: 'Cappuccino',
-    icon: '../assets/icons/coffee-icon-test2.png',
+    icon: '../assets/icons/coffee-icon-test4.png',
     size: [
       {
         price: 38,
@@ -41,7 +41,7 @@ const warmBeverages = [
   },
   {
     id: 'Americano',
-    icon: '../assets/icons/coffee-icon-test3.png',
+    icon: '../assets/icons/coffee-icon-test4.png',
     size: [
       {
         price: 32,

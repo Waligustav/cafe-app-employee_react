@@ -42,10 +42,7 @@ const MainMenu = () => {
         <div>
           {show ? <div className="back-drop" onClick={closeModalHandler}></div> : null}
         </div>
-
-        <Link to='/FrontPage/FrontPage' h1 id='header-title' className='font-cursive'>
-          Kafé Judas
-        </Link>
+          <img id="coffee-header" src="../assets/icons/coffee-header.png"></img>
         <Link to='/FrontPage/FrontPage'>
           <img id='back-arrow-icon' src='../assets/back-arrow.png' />
         </Link>
@@ -69,47 +66,3 @@ const MainMenu = () => {
 
 export default MainMenu;
 
-/*
-          const App = (props) => {
-            const [buttonClicked, changeComponent] = useState(0);
-
-    return (
-        <div>
-            <EnkelKnapp
-                trykketPaa={buttonClicked}
-                change={()=>{changeComponent(0)}}
-            />
-            <EnkelKnapp
-                trykketPaa={buttonClicked}
-                change={()=>{changeComponent(1)}}
-            />
-            <EnkelKnapp
-                trykketPaa={buttonClicked}
-                change={()=>{changeComponent(2)}}
-            />
-
-            {buttonClicked === 0 &&
-                <h1>varme drikker</h1>}
-
-            {buttonClicked === 1 &&
-                <h1>kalde drikker</h1>
-            }
-
-            {buttonClicked === 2 &&
-                <h1>desserter</h1>
-            }
-        <div/>
-    );
-}
-
-const MenuChangerButton = (props) => {
-
-    return (
-        <button 
-            onCick={props.change}
-            className="menu-changer-button">
-                {props.buttonText}
-        </button>
-    );
-}
-*/

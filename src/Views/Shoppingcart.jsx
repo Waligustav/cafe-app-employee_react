@@ -39,10 +39,6 @@ export const Shoppingcart = (props) => {
         <div>
           {show ? <div className="back-drop" onClick={closeModalHandler}></div> : null}
         </div>
-
-        <Link to='/FrontPage/FrontPage' h1 id='header-title' className='font-cursive'>
-          Kafé Judas
-        </Link>
         <Link to='/MainMenu'>
           <img id='back-arrow-icon' src='../assets/back-arrow.png' />
         </Link>
@@ -117,9 +113,8 @@ export const Shoppingcart = (props) => {
       </div>
       <div className="payment-ready-container">
       <div id="totPrice"><strong>Totalpris: {totalPrice}</strong></div>    
-        <button className="pay-now" onClick={() => setIsOpen(true)}>
+        <button className="pay-now" onClick={() => setShow(true)}>
           Bekreft min ordre</button> 
-        <Modal open={isOpen}>Hvordan ønsker du å betale?</Modal>
         </div>
     </> 
   );
