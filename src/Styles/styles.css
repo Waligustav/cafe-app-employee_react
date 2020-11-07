@@ -363,7 +363,7 @@ h1 {
   border: 2px solid rgb(235, 231, 228);
   border-radius: 5px;
   margin: 1rem 0.5rem 2rem;
-  height: 270px;
+  height: 570px;
   overflow-y: scroll;
   overflow-x: hidden;
 }
@@ -524,7 +524,7 @@ input {
 
 #login-container {
   max-width: 100%;
-  width: 70%;
+  width: 50%;
   height: 40%;
   padding: 0rem;
   border-radius: 2%;
@@ -534,7 +534,7 @@ input {
   color: white;
   font-size: 20px;
   text-align: center;
-  margin: 2rem auto;
+  margin: 3rem auto;
 }
 
 #login-label-1 {
@@ -567,6 +567,11 @@ input {
 
 #login-font {
   font-size: 32px;
+}
+
+#main-menu-product-font {
+  color: white;
+  font-size: 35px;
 }
 
 /*

@@ -9,7 +9,7 @@ import { Modal } from "../Modal";
 import { PaymentModal } from "../Model/PaymentModal";
 import { desserts } from '../Model/productLists';
 
-export const Shoppingcart2 = (props) => {
+export const Checkout = (props) => {
   const [show, setShow] = useState(false);
   const closeModalHandler = () => setShow(false);
   const [totalPrice, setTotalPrice] = useState(0);
@@ -22,50 +22,6 @@ export const Shoppingcart2 = (props) => {
     audio.play();
   };
 
-  useEffect(() => {
-    calcTotalPrice();
-  }, [handleKurv.products]);
-
-  const calcTotalPrice = () => {
-    let total = 0;
-    Object.keys(handleKurv.products).forEach((product) => {
-      Object.keys(handleKurv.products[product]).forEach((size) => {
-        const amount = handleKurv.products[product][size].antal;
-        const aPrice = handleKurv.products[product][size].price;
-        total += amount * aPrice;
-      });
-    });
-    setTotalPrice(total);
-  };
-
-  const removeFromBasket = (productName, sizeName) => {
-    const newProducts = {
-      ...handleKurv.products,
-      [productName]: {
-        ...handleKurv.products[productName],
-        [sizeName]: {
-          antal: handleKurv.products[productName][sizeName]["antal"] - 1,
-          price: handleKurv.products[productName][sizeName]["price"],
-        },
-      },
-    };
-    handleKurv.setProducts(newProducts);
-  };
-
-  const addToBasket = (productName, sizeName) => {
-    const newProducts = {
-      ...handleKurv.products,
-      [productName]: {
-        ...handleKurv.products[productName],
-        [sizeName]: {
-          antal: handleKurv.products[productName][sizeName]["antal"] + 1,
-          price: handleKurv.products[productName][sizeName]["price"],
-        },
-      },
-    };
-    handleKurv.setProducts(newProducts);
-  };
-
   const orderList = Object.keys(handleKurv.products).map(
     (product) =>
       Object.keys(handleKurv.products[product]).map((size) => (
@@ -75,34 +31,10 @@ export const Shoppingcart2 = (props) => {
             {product} ({size}) <br/> Pris per:{" "}
             {handleKurv.products[product][size]["price"]} kr,-
           </div>
-          <div className="shopping-cart-buttons-container">
-            <span
-              onClick={() => {
-                removeFromBasket(product, size);
-              }}
-              className={"button minus-button"}
-            >
-              -
-            </span>
-            <span className="number-of-items">{handleKurv.products[product][size]["antal"]}</span>
-            <span
-              onClick={() => {
-                addToBasket(product, size);
-              }}
-              className={"button plus-button"}
-            >
-              +
-            </span>
-          </div>
         </div>
       ))
-    // product.map((size) => {
-    //   console.log(size);
-    //   console.log(product);
-    // });
   );
 
-  //   <li key={`${order.id}-${order.size}`}>{<OrderCard data={order} />}</li>
 
   return (
     <>
@@ -146,7 +78,7 @@ export const Shoppingcart2 = (props) => {
           {totalPrice > 0 &&
             <div id="payment-ready-container">  
               <button className="pay-now">
-                <strong>Send ordre til checkout</strong></button>
+                <strong>Fullfør</strong></button> 
             </div>
             }
         </Link>
@@ -154,4 +86,4 @@ export const Shoppingcart2 = (props) => {
     </>
   );
 };
-export default Shoppingcart2;
+export default Checkout;
