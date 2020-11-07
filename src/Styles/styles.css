@@ -522,6 +522,53 @@ input {
   top: 2.3rem;
 }
 
+#login-container {
+  max-width: 100%;
+  width: 70%;
+  height: 40%;
+  padding: 0rem;
+  border-radius: 2%;
+  background-color: #b2b6ac;
+  background-image: linear-gradient(to bottom, #5c6963, #67746d, #96a09b);
+  opacity: 80%;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  margin: 2rem auto;
+}
+
+#login-label-1 {
+  margin-left: -15%;
+}
+
+#login-label-2 {
+  margin-left: -15%;
+}
+
+#login-btn {
+  border: none;
+  border-radius: 6%;
+  background-color: #4C7C67;
+  opacity: 80%;
+  color: white;
+  width: 30%;
+}
+
+#login-btn:hover {
+  box-shadow: 0 0 10px rgb(251, 176, 176);
+  transform: scale(1.1);
+}
+
+.login-textbox {
+  border: none;
+  border-radius: 6%;
+  width: 50%;
+}
+
+#login-font {
+  font-size: 32px;
+}
+
 /*
 .menu-item-box-beverage {
 
