@@ -51,19 +51,19 @@ const MainMenu = () => {
 
         <div class="warmDrinks frontpage-card">
           <Link to='/MainMenu/VarmDrikke'>
-            <img class='menuImg' src='/assets/cold-drinks-images/ice-tea-img.png' alt="Kaffe" />
+            <img class='menuImg' src='/assets/hotDrinks-menu.jpg' alt="Kaffe" />
             <h1 className="frontpage-card-text">Varme drikker</h1>
         </Link>
         </div>
         <div class="coldDrinks frontpage-card">
         <Link to='/MainMenu/KallDrikke'>
-          <img class='menuImg' src='/assets/cold-drinks-images/ice-tea-img.png' alt="Iste" />
+          <img class='menuImg' src='/assets/coldDrinks-menu .jpg' alt="Iste" />
           <h1 className="frontpage-card-text">Kalde drikker</h1>
         </Link>
         </div>
         <div class="dessert frontpage-card">
           <Link to='/MainMenu/Desserts'>
-            <img class='menuImg' src='/assets/cold-drinks-images/ice-tea-img.png' alt="Kanelsnurr" />
+            <img class='menuImg' src='/assets/croissants.jpg' alt="Kanelsnurr" />
             <h1 className="frontpage-card-text">Desserter</h1>
         </Link>
         </div>
