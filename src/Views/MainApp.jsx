@@ -6,6 +6,7 @@ import "../Styles/styles.css";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { HandleKurv } from "../Model/handleKurv";
 import Contact from "./Contact";
+import LoginPage from "./LoginPage/LoginPage";
 
 const MainApp = (props) => {
   const [fontSize, setFontsize] = useState(16);
@@ -33,7 +34,7 @@ const MainApp = (props) => {
           <Route exact path="/MainMenu/:area?" component={MainMenu} />
           <Route exact path="/ShoppingCart/" component={Shoppingcart} />
           <Route exact path="/Contact/" component={Contact} />
-          <Route component={FrontPage} />
+          <Route component={LoginPage} />
         </Switch>
       </HandleKurv.Provider>
     </Router>
