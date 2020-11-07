@@ -14,12 +14,18 @@ import { Modal } from '../../Modal';
 const MainMenu = () => {
   const menuSectionNames = ['Varm drikke', 'Kald drikke', 'Dessert'];
   let totalPrice = 1;
+  let audio = new Audio("/click.mp4")
 
   const [show, setShow] = useState(false);
   const closeModalHandler = () => setShow(false);
   const [menuSection, setMenuSection] = useState(menuSectionNames[0]); // menuSection blir til "Varm drikke", "Kald drikke" eller "Dessert".
   const [menuItems, setMenuItems] = useState([]);
   let { area } = useParams();
+
+  const start = () => {
+    audio.play()
+  }
+
 
   const getArea = () => {
     switch (area) {
@@ -42,13 +48,16 @@ const MainMenu = () => {
         <div>
           {show ? <div className="back-drop" onClick={closeModalHandler}></div> : null}
         </div>
-          <img id="coffee-header" src="../assets/icons/coffee-header.png"></img>
-        <Link to='/FrontPage/FrontPage'>
+
+        <Link to='/FrontPage/FrontPage' h1 id='header-title' className='font-cursive' onClick={start}>
+          Hovedmeny
+        </Link>
+        <Link to='/FrontPage/FrontPage' onClick={start}>
           <img id='back-arrow-icon' src='../assets/back-arrow.png' />
         </Link>
         
           <Modal show={show} close={closeModalHandler}/>   
-        <img id='hamburger-icon' src='../assets/hamburger-icon.png' onClick={() => setShow(true)}/>
+        <img id='hamburger-icon' src='../assets/hamburger-icon.png' onClick={() => {setShow(true); start()}}/>
 
       </header>
       
@@ -66,3 +75,51 @@ const MainMenu = () => {
 
 export default MainMenu;
 
+
+
+
+/*
+blabla
+          const App = (props) => {
+            const [buttonClicked, changeComponent] = useState(0);
+
+    return (
+        <div>
+            <EnkelKnapp
+                trykketPaa={buttonClicked}
+                change={()=>{changeComponent(0)}}
+            />
+            <EnkelKnapp
+                trykketPaa={buttonClicked}
+                change={()=>{changeComponent(1)}}
+            />
+            <EnkelKnapp
+                trykketPaa={buttonClicked}
+                change={()=>{changeComponent(2)}}
+            />
+
+            {buttonClicked === 0 &&
+                <h1>varme drikker</h1>}
+
+            {buttonClicked === 1 &&
+                <h1>kalde drikker</h1>
+            }
+
+            {buttonClicked === 2 &&
+                <h1>desserter</h1>
+            }
+        <div/>
+    );
+}
+
+const MenuChangerButton = (props) => {
+
+    return (
+        <button 
+            onCick={props.change}
+            className="menu-changer-button">
+                {props.buttonText}
+        </button>
+    );
+}
+*/
