@@ -8,6 +8,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { Modal } from "../Modal";
 import { PaymentModal } from "../Model/PaymentModal";
 import { desserts } from '../Model/productLists';
+import Timer from '../Timer';
 
 export const Checkout = (props) => {
   const [show, setShow] = useState(false);
@@ -73,16 +74,31 @@ export const Checkout = (props) => {
       <div className="content-background">
         <div id='all-shopping-cart-outputs'>
           {orderList}
-        </div>
-        <Link to='/Checkout/:area?'>
-          {totalPrice > 0 &&
-            <div id="payment-ready-container">  
-              <button className="pay-now">
-                <strong>Fullfør</strong></button> 
+           <div className='other-cart-container'>
+            <h4 className='cart-title'>Kommentar til bestillingen?</h4>
+            <input type="text" placeholder="Vennligst havremelk i cappuccinoen"/>
+          </div>
+
+          <div id="lowest-menu">
+            
+            <div id="table-nr-div">
+              <p id="table-nr">Bord</p>
+              <div className="lowest-menu-box" id="table-nr">1</div>
             </div>
-            }
-        </Link>
+
+            <Timer id="timer"></Timer>
+
+            <div id="execute-div">
+              <p id="execute">Fullfør</p>
+              <div className="lowest-menu-box">1</div>
+            </div>
+
+          </div>
+        
+        </div>
+       
       </div>
+      
     </>
   );
 };

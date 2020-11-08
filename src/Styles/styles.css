@@ -399,6 +399,7 @@ h1 {
   text-align: center;
   color: rgb(235, 231, 228);
   font-size: 2rem;
+  margin-bottom: 100px;
 }
 
 input {
@@ -573,6 +574,47 @@ input {
   color: white;
   font-size: 35px;
 }
+
+#lowest-menu{
+  position: relative;
+  display: flex;
+  margin-top: 15rem;
+  padding: 0px;
+  text-align: center;
+  justify-content: center; 
+}
+
+#table-nr-div{
+  position: relative;
+  display: flex;
+}
+
+#execute-div{
+  position: relative;
+  display: flex;
+}
+
+#timer{
+  
+  
+}
+
+#execute{
+  margin-left: 10rem;
+ 
+}
+
+#complete-btn{
+ text-align: center;
+ margin-bottom: 100px;
+}
+
+.lowest-menu-box{
+  height: 2rem;
+  width: 2rem;
+  border: solid black;
+}
+
 
 /*
 .menu-item-box-beverage {
