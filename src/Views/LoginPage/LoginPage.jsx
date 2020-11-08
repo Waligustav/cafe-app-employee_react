@@ -30,7 +30,7 @@ export const LoginPage = () => {
         </div>
 
         <Link to='/FrontPage/FrontPage' h1 id='header-title' className='font-cursive' onClick={start}>
-          Kafé Judas
+          Kafé HK
         </Link>
         
           <Modal show={show} close={closeModalHandler}/>   
@@ -42,11 +42,11 @@ export const LoginPage = () => {
                   <p id="login-font">Tast inn ansattnummer og passord</p>
                   <div>
                       <label id="login-label-1"><strong>Brukernavn</strong></label>
-                      <input className="login-textbox" type="text" placeholder="..."></input>
+                      <input className="login-textbox" type="text" placeholder="Brukernavn"></input>
                   </div>
                   <div>
                       <label id="login-label-2"><strong>Passord&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong></label>
-                      <input className="login-textbox" type="text" placeholder="..."></input>
+                      <input className="login-textbox" type="text" placeholder="Passord"></input>
                   </div>
 
                   <Link to='/MainMenu/:area?'>

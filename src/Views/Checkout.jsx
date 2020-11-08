@@ -56,14 +56,15 @@ export const Checkout = (props) => {
           Checkout
         </Link>
 
-        <Link to="/MainMenu" onClick={start}>
-          <img id="back-arrow-icon" src="../assets/back-arrow.png" />
+        <Link to="/Shoppingcart" onClick={start}>
+          <img id="back-arrow-icon" src="../assets/back-arrow.png" alt="Back button" />
         </Link>
 
         <Modal show={show} close={closeModalHandler} />
         <img
           id="hamburger-icon"
           src="../assets/hamburger-icon.png"
+          alt="Menu icon"
           onClick={() => {
             setShow(true);
             start();
@@ -104,7 +105,9 @@ export const Checkout = (props) => {
 
           <div>
             <h2 className="other-title">Klikk for å bekrefte</h2>
-            <button id="confirm-button">Bekreft</button>
+            <Link to="/MainMenu" onClick={start}>
+              <button id="confirm-button">Bekreft</button>
+            </Link>
           </div>
 
 

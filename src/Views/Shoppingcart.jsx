@@ -124,13 +124,14 @@ export const Shoppingcart2 = (props) => {
         </Link>
 
         <Link to="/MainMenu" onClick={start}>
-          <img id="back-arrow-icon" src="../assets/back-arrow.png" />
+          <img id="back-arrow-icon" src="../assets/back-arrow.png" alt="Back button"/>
         </Link>
 
         <Modal show={show} close={closeModalHandler} />
         <img
           id="hamburger-icon"
           src="../assets/hamburger-icon.png"
+          alt="Menu icon"
           onClick={() => {
             setShow(true);
             start();

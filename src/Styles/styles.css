@@ -47,6 +47,10 @@ h1 {
   text-shadow: 0 0 5px black;
 }
 
+.payment-title {
+  left: 10rem;
+}
+
 /* Cursive Font */
 .font-cursive {
   font-family: 'Lato', sans-serif;

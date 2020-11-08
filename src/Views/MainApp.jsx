@@ -8,7 +8,7 @@ import { HandleKurv } from "../Model/handleKurv";
 import Contact from "./Contact";
 import LoginPage from "./LoginPage/LoginPage";
 import Checkout from "./Checkout";
-import OrderComplete from "./OrderComplete";
+import OrderHistory from "./OrderHistory";
 
 const MainApp = (props) => {
   const [fontSize, setFontsize] = useState(16);
@@ -35,9 +35,8 @@ const MainApp = (props) => {
         <Switch>
           <Route exact path="/MainMenu/:area?" component={MainMenu} />
           <Route exact path="/ShoppingCart/" component={Shoppingcart} />
-          <Route exact path="/Contact/" component={Contact} />
           <Route exact path="/Checkout/:area?" component={Checkout} />
-          <Route exact path="/OrderComplete" component={OrderComplete}/>
+          <Route exact path="/OrderHistory" component={OrderHistory}/>
           <Route component={LoginPage} />
         </Switch>
       </HandleKurv.Provider>

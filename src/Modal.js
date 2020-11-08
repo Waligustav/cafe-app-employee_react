@@ -26,11 +26,8 @@ export const Modal = ({ show, close}) => {
                         <Link to='/ShoppingCart'>
                             <h3>Handlekurv</h3>
                         </Link>
-                        <Link to='/FrontPage/FrontPage'>
+                        <Link to='/OrderHistory'>
                             <h3>Ordrehistorikk</h3>
-                        </Link>
-                        <Link to='/Contact'>
-                            <h3>Kontakt oss</h3>
                         </Link>
                 
                     </div>

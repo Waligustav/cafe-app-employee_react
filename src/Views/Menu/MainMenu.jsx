@@ -32,11 +32,11 @@ const MainMenu = () => {
           Produkter
         </Link>
         <Link to='/FrontPage/FrontPage' onClick={start}>
-          <img id='back-arrow-icon' src='../assets/back-arrow.png' />
+          <img id='back-arrow-icon' src='../assets/back-arrow.png' alt="Back button" />
         </Link>
         
           <Modal show={show} close={closeModalHandler}/>   
-        <img id='hamburger-icon' src='../assets/hamburger-icon.png' onClick={() => {setShow(true); start()}}/>
+        <img id='hamburger-icon' src='../assets/hamburger-icon.png' alt="Menu icon" onClick={() => {setShow(true); start()}}/>
       </header>
       
       <div className="content-background">
