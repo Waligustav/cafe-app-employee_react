@@ -39,6 +39,7 @@ export const Shoppingcart2 = (props) => {
   };
 
   const removeFromBasket = (productName, sizeName) => {
+    const getNrOrderOf = handleKurv.products[productName][sizeName]["antal"];
     const newProducts = {
       ...handleKurv.products,
       [productName]: {
@@ -49,7 +50,10 @@ export const Shoppingcart2 = (props) => {
         },
       },
     };
-    handleKurv.setProducts(newProducts);
+    if(getNrOrderOf > 0){
+      handleKurv.setProducts(newProducts);
+    }
+    
   };
 
   const addToBasket = (productName, sizeName) => {
