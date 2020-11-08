@@ -79,6 +79,10 @@ h1 {
   margin: 0.9rem 0.5rem;
 }
 
+#hamburger-icon:hover {
+  cursor: pointer;
+}
+
 #back-arrow-icon {
   filter: invert(0.95);
   width: 2.5rem;
@@ -373,7 +377,7 @@ h1 {
   border: 2px solid rgb(235, 231, 228);
   border-radius: 5px;
   margin: 1rem 0.5rem 2rem;
-  height: 570px;
+  height: 520px;
   overflow-y: scroll;
 }
 
@@ -462,6 +466,10 @@ input {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+}
+
+.pay-now:hover {
+  cursor: pointer;
 }
 
 .info-txt {
