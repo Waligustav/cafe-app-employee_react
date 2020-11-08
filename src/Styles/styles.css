@@ -359,6 +359,7 @@ h1 {
 /* Shopping cart */
 
 #all-shopping-cart-outputs {
+  position: relative;
   background-color: #656860;
   border: 2px solid rgb(235, 231, 228);
   border-radius: 5px;
@@ -576,21 +577,18 @@ input {
 }
 
 #lowest-menu{
-  position: relative;
   display: flex;
-  margin-top: 15rem;
+  bottom: 0px;
   padding: 0px;
   text-align: center;
-  justify-content: center; 
+  justify-content: space-around
 }
 
 #table-nr-div{
-  position: relative;
   display: flex;
 }
 
 #execute-div{
-  position: relative;
   display: flex;
 }
 
@@ -600,19 +598,16 @@ input {
 }
 
 #execute{
-  margin-left: 10rem;
  
 }
 
-#complete-btn{
- text-align: center;
- margin-bottom: 100px;
-}
+
 
 .lowest-menu-box{
   height: 2rem;
   width: 2rem;
   border: solid black;
+  margin-left: 1rem;
 }
 
 
