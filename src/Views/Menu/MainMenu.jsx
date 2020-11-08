@@ -1,5 +1,4 @@
 import React, { useContext, useState } from 'react';
-import { useParams } from 'react-router-dom';
 import '../../Styles/styles.css';
 import { VarmDrikke } from './Components/VarmDrikke';
 import { KallDrikke } from './Components/KallDrikke';
@@ -12,35 +11,15 @@ import { render } from '@testing-library/react';
 import { Modal } from '../../Modal';
 
 const MainMenu = () => {
-  const menuSectionNames = ['Varm drikke', 'Kald drikke', 'Dessert'];
   let totalPrice = 1;
   let audio = new Audio("/click.mp4")
 
   const [show, setShow] = useState(false);
   const closeModalHandler = () => setShow(false);
-  const [menuSection, setMenuSection] = useState(menuSectionNames[0]); // menuSection blir til "Varm drikke", "Kald drikke" eller "Dessert".
-  const [menuItems, setMenuItems] = useState([]);
-  let { area } = useParams();
 
   const start = () => {
     audio.play()
   }
-
-
-  const getArea = () => {
-    switch (area) {
-      case 'VarmDrikke':
-        return <VarmDrikke />;
-      case 'KallDrikke':
-        return <KallDrikke />;
-      case 'Desserts':
-        return <Desserts />;
-      default:
-        return <VarmDrikke />;
-    }
-  };
-
-
 
   return (
     <>
@@ -49,8 +28,8 @@ const MainMenu = () => {
           {show ? <div className="back-drop" onClick={closeModalHandler}></div> : null}
         </div>
 
-        <Link to='/FrontPage/FrontPage' h1 id='header-title' className='font-cursive' onClick={start}>
-          Hovedmeny
+        <Link to=' ' h1 id='header-title' className='font-cursive' onClick={start}>
+          Produkter
         </Link>
         <Link to='/FrontPage/FrontPage' onClick={start}>
           <img id='back-arrow-icon' src='../assets/back-arrow.png' />
@@ -58,15 +37,12 @@ const MainMenu = () => {
         
           <Modal show={show} close={closeModalHandler}/>   
         <img id='hamburger-icon' src='../assets/hamburger-icon.png' onClick={() => {setShow(true); start()}}/>
-
       </header>
       
-      
-
       <div className="content-background">
-        <MenuSelection />
-        {getArea()}
-        <div className="space-maker"></div>
+        <VarmDrikke />;
+        <KallDrikke />;
+        <Desserts />;
         <PricePreView totalPrice={totalPrice} />
       </div>
     </>
