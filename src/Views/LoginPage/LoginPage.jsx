@@ -49,7 +49,7 @@ export const LoginPage = () => {
                       <input className="login-textbox" type="text" placeholder="Passord"></input>
                   </div>
 
-                  <Link to='/MainMenu/:area?'>
+                  <Link to='/MainMenu/:area?' onClick={start}>
                       <input type="button" value="Logg inn" id="login-btn"></input>
                   </Link>
           </div>
