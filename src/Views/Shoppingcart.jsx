@@ -114,7 +114,7 @@ export const Shoppingcart2 = (props) => {
         </div>
 
         <Link
-          to="/FrontPage/FrontPage"
+          to="/Shoppingcart/Shoppingcart"
           h1
           id="header-title"
           className="font-cursive"

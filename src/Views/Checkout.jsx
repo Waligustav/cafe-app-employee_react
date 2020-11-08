@@ -46,13 +46,13 @@ export const Checkout = (props) => {
         </div>
 
         <Link
-          to="/FrontPage/FrontPage"
+          to=" "
           h1
           id="header-title"
           className="font-cursive"
           onClick={start}
         >
-          Handlekurv
+          Checkout
         </Link>
 
         <Link to="/MainMenu" onClick={start}>

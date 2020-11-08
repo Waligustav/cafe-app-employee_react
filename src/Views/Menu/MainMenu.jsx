@@ -28,7 +28,7 @@ const MainMenu = () => {
           {show ? <div className="back-drop" onClick={closeModalHandler}></div> : null}
         </div>
 
-        <Link to='/FrontPage/FrontPage' h1 id='header-title' className='font-cursive' onClick={start}>
+        <Link to=' ' h1 id='header-title' className='font-cursive' onClick={start}>
           Produkter
         </Link>
         <Link to='/FrontPage/FrontPage' onClick={start}>
