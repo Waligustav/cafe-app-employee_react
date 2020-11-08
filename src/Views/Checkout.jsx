@@ -74,19 +74,40 @@ export const Checkout = (props) => {
       <div className="content-background">
         <div id='all-shopping-cart-outputs'>
           {orderList}
-</div>
-<div id="lowest-menu">
-<div id="table-nr-div">
-<p id="table-nr">Bord</p>
-<div className="lowest-menu-box" id="table-nr">1</div>
-</div>
+        </div>
+          <div id="lowest-menu">
 
-<Timer id="timer"></Timer>
+            <div>
+              <h4 className='other-title'>Kommentar</h4>
+              <input type="text" placeholder="Vennligst havremelk i cappuccinoen"/>
+            </div>
 
-<div id="execute-div">
-<p id="execute">Fullfør</p>
-<div className="lowest-menu-box">1</div>
-</div>
+          <div>
+                <h2 className="other-title">Bordnummer</h2>
+                <select id="select-number">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                </select>
+            </div>
+
+          <div>
+          <h2 className="other-title">Tid til levering</h2>
+            <input id='time-to-delivery-input' type="text" placeholder="02:00"></input>
+          </div>
+
+          <div>
+            <h2 className="other-title">Klikk for å bekrefte</h2>
+            <button id="confirm-button">Bekreft</button>
+          </div>
+
+
         </div>
       </div>
     </>

@@ -38,21 +38,21 @@ export const LoginPage = () => {
       </header>
       
       
-          <div id="login-container">
-                <p id="login-font">Tast inn ansattnummer og passord</p>
-                <div>
-                    <label id="login-label-1"><strong>Brukernavn</strong></label>
-                    <input className="login-textbox" type="text" placeholder="..."></input>
-                </div>
-                <div>
-                    <label id="login-label-2"><strong>Passord&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong></label>
-                    <input className="login-textbox" type="text" placeholder="..."></input>
-                </div>
+            <div id="login-container">
+                  <p id="login-font">Tast inn ansattnummer og passord</p>
+                  <div>
+                      <label id="login-label-1"><strong>Brukernavn</strong></label>
+                      <input className="login-textbox" type="text" placeholder="..."></input>
+                  </div>
+                  <div>
+                      <label id="login-label-2"><strong>Passord&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong></label>
+                      <input className="login-textbox" type="text" placeholder="..."></input>
+                  </div>
 
-                <Link to='/MainMenu/:area?'>
-                    <input type="button" value="Logg inn" id="login-btn"></input>
-                </Link>
-        </div>
+                  <Link to='/MainMenu/:area?'>
+                      <input type="button" value="Logg inn" id="login-btn"></input>
+                  </Link>
+          </div>
 
     </>
   );

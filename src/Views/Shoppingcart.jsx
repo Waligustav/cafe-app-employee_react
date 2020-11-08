@@ -152,11 +152,7 @@ export const Shoppingcart2 = (props) => {
             </div>
             }
         </Link>
-        <div className='other-cart-container'>
-            <h4 className='cart-title'>Kommentar til bestillingen?</h4>
-            <input type="text" placeholder="Vennligst havremelk i cappuccinoen"/>
- 
-          </div>
+        
       </div>
 
       

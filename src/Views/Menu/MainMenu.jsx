@@ -42,12 +42,15 @@ const MainMenu = () => {
       <div className="content-background">
         <div className="menu-content-container">
           <div className="menu-content-components">
+            <h2 className='other-title'>Varm drikke</h2>
             <VarmDrikke />
           </div>
           <div className="menu-content-components">
+            <h2 className='other-title'>Kald drikke</h2> 
             <KallDrikke />
           </div>
           <div className="menu-content-components">
+            <h2 className='other-title'>Dessert</h2> 
             <Desserts />
           </div>
         </div>
