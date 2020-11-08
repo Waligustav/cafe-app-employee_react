@@ -29,7 +29,7 @@ const Expander = props => {
       <button className="expander-title">
 
 
-        <img className="iconImage" src={props.icon} alt={props.title}/>
+        <img className="iconImage" alt="Icon of chosen product" src={props.icon} alt={props.title}/>
         <p style={titleStyle}> {props.title}</p>
       </button>
 

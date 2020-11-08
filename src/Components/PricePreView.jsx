@@ -38,7 +38,7 @@ export const PricePreView = (props) => {
           </div>
           <Link to='/Shoppingcart' onClick={start}>
              <button  id='go-to-shopping-cart-button'>
-               <img className="shopping-cart-img" src="../assets/icons/shoppingCart.png"></img>
+               <img className="shopping-cart-img" alt="shopping cart icon" src="../assets/icons/shoppingCart.png"></img>
              <p className="p-go-to-shoppingCart">Gå til handlekurv</p>
              </button>
           </Link>

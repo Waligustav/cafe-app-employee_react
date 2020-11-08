@@ -36,7 +36,7 @@ export const Contact = () => {
         </Link>
         
           <Modal show={show} close={closeModalHandler}/>   
-        <img id='hamburger-icon' src='../assets/hamburger-icon.png' onClick={() => {setShow(true); start()}}/>
+        <img id='hamburger-icon' alt="hamburger menu icon" src='../assets/hamburger-icon.png' onClick={() => {setShow(true); start()}}/>
 
       </header>
       
@@ -46,7 +46,7 @@ export const Contact = () => {
             <h3 className="info-txt">40644715</h3>
             <h3 className="info-txt">cafe@judas.com </h3>
               <img id='telephone-icon' src='../assets/icons/telephone-icon.png' />
-              <img id='mail-icon' src='../assets/icons/mail-icon.png' />
+              <img id='mail-icon' alt="mail icon" src='../assets/icons/mail-icon.png' />
             </div>
           <div class="cafe-map">
             <h3 className="map-txt">Hvor holder vi til?</h3>

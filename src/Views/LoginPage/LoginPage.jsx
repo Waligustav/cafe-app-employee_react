@@ -34,7 +34,7 @@ export const LoginPage = () => {
         </Link>
         
           <Modal show={show} close={closeModalHandler}/>   
-        <img id='hamburger-icon' src='../assets/hamburger-icon.png' onClick={() => { setShow(true); start(); }}/>
+        <img id='hamburger-icon' alt="hamburger menu icon" src='../assets/hamburger-icon.png' onClick={() => { setShow(true); start(); }}/>
       </header>
       
       
