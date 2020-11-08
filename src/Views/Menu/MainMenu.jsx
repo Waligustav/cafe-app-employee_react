@@ -40,9 +40,18 @@ const MainMenu = () => {
       </header>
       
       <div className="content-background">
-        <VarmDrikke />;
-        <KallDrikke />;
-        <Desserts />;
+        <div className="menu-content-container">
+          <div className="menu-content-components">
+            <VarmDrikke />
+          </div>
+          <div className="menu-content-components">
+            <KallDrikke />
+          </div>
+          <div className="menu-content-components">
+            <Desserts />
+          </div>
+        </div>
+        
         <PricePreView totalPrice={totalPrice} />
       </div>
     </>

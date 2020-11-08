@@ -3,7 +3,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import '../Styles/styles.css';
 
 const Expander = props => {
-  const [active, setActive] = useState(false);
+  const [active, setActive] = useState(true);
   const contentRef = useRef(null);
   let audio = new Audio("/click.mp4")
 
@@ -26,14 +26,11 @@ const Expander = props => {
 
   return (
     <div className="expander-section">
-      <button className="expander-title" onClick={() => {toogleActive(); start()}}>
+      <button className="expander-title">
 
 
         <img className="iconImage" src={props.icon}/>
         <p style={titleStyle}> {props.title}</p>
-        <span className={active ? 'expander-icon rotate': 'expander-icon'}>
-          <strong>{`>`}</strong>
-        </span>
       </button>
 
       <div

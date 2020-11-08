@@ -99,6 +99,11 @@ h1 {
 
 /* Main Menu */
 
+.menu-content-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 .product-image {
   width: 100%;
   max-width: 400px;
@@ -114,13 +119,13 @@ h1 {
 
 .iconImage {
   position: relative;
-  width: 3rem;
+  width: 2.5rem;
   margin-left: 0rem;
   margin: 0.3rem;
 }
 
 .expander-title {
-  height: 4.4rem;
+  height: 3.5rem;
   display: flex;
   align-items: center;
   border: none;
@@ -128,7 +133,8 @@ h1 {
   background-color: rgb(255, 255, 255);
   color: #444;
   cursor: pointer;
-  border-radius: 15px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
   box-shadow: 2px 2px 6px 0 rgb(134, 145, 140);
 }
 
@@ -152,13 +158,14 @@ h1 {
   background-color: #fff;
   overflow: hidden;
   transition: max-height 0.6s ease;
-  border-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
 .expander-text {
   font-weight: 400;
   font-size: 14px;
-  padding: 1rem;
+  padding-bottom: 0.5rem;
 }
 
 .allergens-p {
